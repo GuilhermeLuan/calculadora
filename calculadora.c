@@ -52,19 +52,6 @@ bool ehFuncao(char *funcao) {
             strcmp(funcao, "tan") == 0 || strcmp(funcao, "log") == 0);
 }
 
-int precedenciaOperadores(char op){
-    switch (op) {
-        case '+': case '-': return 1;
-        case '*': case '/': return 2;
-        case '^': return 3;
-        default: return 0;
-    }
-}
-
-void adicionaParanteses(char *dest, const char *expr){
-    snprintf(dest, 512, "(%s)", expr);
-}
-
 float avaliarPosfixa(char *posFixada) {
     Pilha pilha;
     inicializaPilha(&pilha);
