@@ -1,8 +1,6 @@
 #ifndef EXPRESSAO_H
 #define EXPRESSAO_H
 
-#include <stdbool.h>
-
 typedef struct {
     char posFixa[512];     // Expressão na forma pos fixa, como 3 12 4 + *
     char inFixa[512];      // Expressão na forma pos fixa, como 3 * (12 + 4)

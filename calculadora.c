@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
+#include <stdbool.h>
 #include "calculadora.h"
 
 #define TAMANHO_MAXIMO 100
